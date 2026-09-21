@@ -1,0 +1,113 @@
+{{nav name="get PHP Head" id="66" }}
+<!DOCTYPE html>
+<html lang="en" class="no-js {{nav name="get Direct Edit Script" id="112" }}">
+<head>
+  {{>metaTags}}
+  {{>favicons}}
+  {{>headCSSScripts}}
+</head>
+    
+<body {{nav name="Red Theme" id="11" }}>
+  
+{{nav name="Google Tag Manager Body" id="54" }}
+    
+<header class="header" aria-label="Site header">
+  <a href="#main-content" class="skip-to-main">Skip to Main Content</a>
+  <nav class="navbar-expand-xl" aria-label="Header navigation">
+    <div class="header__container nav-wrapper">
+      <a href="{{nav name="Path to Home" id="18" }}" class="navbar-logo">
+        {{{media id="15" layout="image/*"}}}
+      </a>
+
+      <div class="nav-focus">
+        <button class="navbar-toggler" type="button" aria-label="Open mobile navigation">
+          <svg class="svg-md-36px" focusable="false" aria-hidden="true">
+            <title>Open mobile menu</title>
+            <use xlink:href="{{{media id="22" layout="path/*"}}}#ic_more_vert_36px"></use>
+          </svg>
+        </button>
+      
+
+      	<!-- Mobile Sidemenu Design -->
+       <div class="navbar-collapse">
+          <div class="navbar-mobile-actions">
+            <a href="/search" class="btn-open-search" aria-label="Open search">
+              <svg class="svg-md-24px" focusable="false" aria-hidden="true">
+                <title>Open search</title>
+                <use xlink:href="{{{media id="22" layout="path/*"}}}#ic_search_24px"></use>
+              </svg>
+            </a>
+
+            <button class="btn-close-nav" type="button" aria-label="Close mobile header navigation">
+              <svg class="svg-md-24px" focusable="false" aria-hidden="true">
+                <title>Close mobile menu</title>
+                <use xlink:href="{{{media id="22" layout="path/*"}}}#ic_close_24px"></use>
+              </svg>
+            </button>
+          </div>
+
+          {{nav name="Utility Header" id="1" }} <!-- Utility Header -->
+
+          <div class="navbar-secondary">
+            <ul class="navbar-nav">
+
+             {{nav name="Mega Menu" id="2" }} <!-- Mega Menu Header -->
+
+            <!-- Mobile Menu Quick links -->
+
+             {{nav name="Mobile Menu Quicklinks " id="51" }}
+
+              <!-- Desktop view search -->
+              <li class="nav-search">
+                <a href="/search" class="btn-open-search" aria-label="Open search">
+                  <svg class="svg-md-24px" focusable="false" aria-hidden="true">
+                    <title>Open search</title>
+                    <use xlink:href="{{{media id="22" layout="path/*"}}}#ic_search_24px"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+			</div>
+
+      <!-- Mobile Fullmenu Design -->
+      
+    </div>
+  </nav>
+</header>
+  
+<div class="header-placeholder"></div>
+  
+{{nav name="Header Search" id="3" }}
+  
+  <div class="emergencynotice" aria-atomic="true" aria-live="assertive" data-t4-emergency-notices="{{{media id="335" layout="path/*"}}}"></div>
+  {{nav name="Get Site Wide Notices" id="56" }}
+    
+<main class="inner mt-4 {{nav name="Display content details from current section" id="46" }}" id="main-content">
+  
+  {{nav name="Inner Page Header" id="36" }}
+  
+  <div class="breadcrumb container-fluid container-t4">
+    <div class="breadcrumb__wrapper">
+      <nav class="breadcrumb__nav">
+        {{nav name="Breadcrumbs" id="14" }}
+      </nav>
+      
+      {{nav name="Quicklinks" id="15" }}
+    </div>
+  </div>
+  
+  {{nav name="Events Calendar: After Breadcrumb" id="90" }}
+  
+  <div class="event-list">
+    
+    {{nav name="Events Calendar: Before Content Main Content" id="91" }}
+  
+  	<div class="container-fluid container-t4">
+
+     	<div class="row">
+        
+         	<div class="col-12 col-xl-8 pl-xl-5 order-xl-last">
+   
+        			<div class="content">  								

@@ -1,0 +1,153 @@
+<?php
+try {
+    /* Version 2.1.1 */
+   
+    include_once(__DIR__ . '/config.php');
+    
+    header('Content-Type: application/json');
+    if (preg_match("/t4_([0-9]{16,20}+)\.php/Ui", $_SERVER['REQUEST_URI'], $output_array)) {
+        throw new Exception("Sorry, Course Search is not available in preview.", 1);
+    }
+
+    mb_http_output('utf-8');
+    mb_internal_encoding('utf-8');
+
+    require_once((strpos($config['library'], '.phar') !== false ? 'phar://' : '') . realpath($_SERVER["DOCUMENT_ROOT"]).$config['library'] . (strpos($config['library'], '.phar') !== false ? '/vendor/autoload.php' : ''));
+
+    $queryHandler = \T4\PHPSearchLibrary\QueryHandlerFactory::getInstance('AutocompleteQueryHandler', $_GET);
+    $queryHandler->handleQuery();
+
+    $search = \T4\PHPSearchLibrary\SearchFactory::getInstance('Search', $config['source']);
+    $substringSearch = \T4\PHPSearchLibrary\FilterFactory::getInstance('FilterBySubstring', $search);
+
+    if (!isset($_GET['type'])) {
+        $_GET['type'] = 'default';
+    } elseif (!array_key_exists($_GET['type'], $search->getDocuments()[0])) {
+        $_GET['type'] = 'default';
+    }
+
+    if ($_GET['type'] != 'default') {
+        $substringSearch->setMember('element', $_GET['type']);
+        $substringSearch->setMember('query', $queryHandler->getQuery());
+        $substringSearch->runFilter();
+    } else {
+        $substringSearch->setMember('element', 'courseName');
+        $substringSearch->setMember('query', $queryHandler->getQuery());
+        $substringSearch->setMember('combinationOption', true);
+        $substringSearch->runFilter();
+
+        $substringSearch->setMember('element', 'courseOverview');
+        $substringSearch->runFilter();
+        $search->combineResults();
+    }
+
+    $search->intersectDocumentResults();
+
+    $documentCollection = \T4\PHPSearchLibrary\DocumentCollectionFactory::getInstance(
+        'DocumentCollection',
+        $search->getDocuments(),
+        $search->getDocumentResults(),
+        $queryHandler->doQuerysExist()
+    );
+
+    if ($documentCollection->wereResultsFound() === false) {
+        $response = new \T4\PHPSearchLibrary\Responses\JsonErrorResponse($queryHandler->getQueryAsString(), $queryHandler->getQueryAsString());
+        $response->send();
+    } else {
+        // Instantiate our Processors
+        $frequencySearch = \T4\PHPSearchLibrary\ProcessorFactory::getInstance('FrequencySearch', $documentCollection);
+        $radialSearch = \T4\PHPSearchLibrary\ProcessorFactory::getInstance('RadialPatternSearch', $documentCollection);
+        $frequencySearch->setMember('element', 'courseOverview');
+        $frequencySearch->setMember('query', $queryHandler->getQuery());
+        $frequencySearch->runProcessor();
+
+        $radialSearch->setMember('element', 'promotedCourse');
+        $radialSearch->setMember('multipleValueState', true);
+        $radialSearch->setMember('multipleValueSeparator', ', ');
+        $radialSearch->setMember('boost', 100000);
+        $radialSearch->runProcessor();
+        $documentCollection->combineRankedResults();
+
+        if ($_GET['type'] != 'default') {
+                $documentCollection->sort($_GET['type'], SORT_ASC);
+        } else {
+                $documentCollection->sort('courseName', SORT_ASC);
+        }
+
+        $results = array();
+        $i = 0;
+        $details = $documentCollection->getDocuments();
+        
+        foreach ($documentCollection->getDocumentResults() as $document) {
+            if ($_GET['type'] != 'default') {
+                $terms = explode(' ', $_GET['term']);
+                $element = $details[$document][$_GET['type']];
+                $termsRegEx = '';
+                foreach ($terms as $term) {
+                    if ($element  !== '') {
+                        $termsRegEx .= empty($termsRegEx) ? preg_quote($term) : '|'.preg_quote($term);
+                    }
+                }
+                $element = preg_replace('/('.$termsRegEx.')/i', '<span class="term">$1</span>', $element);
+                if (isset($details[$document]['courseURL'])) {
+                    $results[$i]['label'] = '<a href="'.$details[$document]['courseURL'].'">'.$element.'</a>';
+                } else {
+                    $results[$i]['label'] = $element;
+                }
+                $results[$i]['value'] = $details[$document][$_GET['type']];
+            } else {
+                $maxDesc = 285;
+                $terms = explode(' ', $_GET['term']);
+                $name = $details[$document]['courseName'];
+                $desc = $details[$document]['courseOverview'];
+    
+                $termsRegEx = '';
+                foreach ($terms as $term) {
+                    if ($desc !== '') {
+                        $found = stripos($details[$document]['courseOverview'], $term);
+                        if ($found !== false) {
+                            $min = round($found-($maxDesc/2)+(strlen($found)/2));
+                            $max = $min + $maxDesc;
+                            if ($min < 0) {
+                                $min = 0;
+                            }
+                        } else {
+                            $min = 0;
+                        }
+                        
+                        
+                        $desc = strlen($desc) > $maxDesc ? ($min > 0 ? '...' : '') .substr($desc, $min, $maxDesc-3).'...' : $desc;
+                        $termsRegEx .= empty($termsRegEx) ? preg_quote($term) : '|'.preg_quote($term);
+                    }
+                }
+                $desc = preg_replace('/('.$termsRegEx.')/i', '<span class="term">$1</span>', $desc);
+                $name = preg_replace('/('.$termsRegEx.')/i', '<span class="term">$1</span>', $name);
+
+                $results[$i]['label'] = '<a href="'.$details[$document]['courseURL'].'">'.$name.'<span class="desc">'.$desc.'</span>'.'</a>';
+                $results[$i]['value'] = $details[$document]['courseName'];
+                $results[$i]['optional'] = '';
+            }
+
+            $i += 1;
+        }
+
+        $results = array_unique($results, SORT_REGULAR);
+        $response = new \T4\PHPSearchLibrary\Responses\JsonSuccessResponse($results);
+        $response->send();
+    }
+} catch (RuntimeException $e) {
+    $response = new \T4\PHPSearchLibrary\Responses\JsonErrorResponse('No Suggested Results: '.$e->getMessage());
+    $response->send();
+} catch (InvalidArgumentException $e) {
+    $response = new \T4\PHPSearchLibrary\Responses\JsonErrorResponse('No Suggested Results: '.$e->getMessage());
+    $response->send();
+} catch (LengthException $e) {
+    $response = new \T4\PHPSearchLibrary\Responses\JsonErrorResponse('No Suggested Results: '.$e->getMessage());
+    $response->send();
+} catch (UnexpectedValueException $e) {
+    $response = new \T4\PHPSearchLibrary\Responses\JsonErrorResponse('No Suggested Results: '.$e->getMessage());
+    $response->send();
+} catch (UnderflowException $e) {
+    $response = new \T4\PHPSearchLibrary\Responses\JsonErrorResponse('No Suggested Results: '.$e->getMessage());
+    $response->send();
+}

@@ -1,0 +1,16 @@
+<div class="col-12 col-lg-6">
+  <div class="two-blog-cards__card-t4">
+    <div class="two-blog-cards__card-img-t4">
+      {{{media id=(mediaId element="Image") layout="image/*"}}}
+    </div>
+    <div class="two-blog-cards__card-body-t4">
+      <div class="card-content">
+        <h2>{{{fulltext linkText=(publish element="Title")}}}</h2>
+      </div>
+      <div class="card-meta">
+        <p>{{dateFormat (dateElement element="Published Date") "MMMM d, yyyy" }}
+          {{#ifSet element="Author"}} by {{publish element="Author"}}{{/ifSet}}</p>
+      </div>
+    </div>
+  </div>
+</div>

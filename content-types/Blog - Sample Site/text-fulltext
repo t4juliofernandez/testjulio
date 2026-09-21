@@ -1,0 +1,103 @@
+<div class="double-padding-divider-xl single-padding-divider container-fluid container-t4">
+    <div class="row">
+        <div class="col-12">
+            <div class="event__header">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrapper">
+                        <nav class="breadcrumb__nav">
+                        {{nav id="14" name="Breadcrumbs"}}
+                        </nav>
+                    </div>
+                </div>
+                <a href="{{nav id="47" name="Blog Listing Link"}}" class="btn-t4 btn-t4-primary">Back to Blogs</a>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="single-padding-divider">
+                <hr>
+            </div>
+            {{{media id=(mediaId element="Image") layout="image/*"}}}
+        </div>
+        <div class="col-12 col-lg-12">
+            <h1 class="event__title">
+                <span>{{publish element="Title"}}</span>
+            </h1>
+            {{#ifSet element="Blog Category" ~}}
+                <p>
+                    {{#each (selected element="Blog Category") ~}}
+                        <span class="inline-tag-t4-navy">{{name}}</span>
+                    {{~/each}}
+                </p>
+            {{~/ifSet}}
+            <p>
+                <span class="event__date">{{#ifSet element="Author"}} by {{publish element="Author"}} on {{/ifSet}}{{dateFormat (dateElement element="Published Date") "MMMM d, yyyy" }}</span> 
+            </p>
+        </div>
+        <div class="col-12 col-lg-12">
+            <div class="general-content">
+                <p class="body-lead-font">{{publish element="Abstract"}}</p>
+                {{{publish element="Main body"}}}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="share-page">
+        <h3>Share this blog</h3>
+        <a href="https://twitter.com/share" style="margin-right: 1em;" class="twitter-share-button" data-via="TERMINALFOUR">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script src="//platform.linkedin.com/in.js" type="text/javascript">
+        lang: en_US
+        </script>
+        <script type="IN/Share" data-counter="right"></script>
+    </div>              
+    <br>
+    <div id="comments">
+        {{#preview~}}
+            <p>Comments are not available in preview</p>
+        {{~else~}}
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* Polyfill String.contains */
+                if ( !String.prototype.contains ) {
+                    String.prototype.contains = function() {
+                        return String.prototype.indexOf.apply( this, arguments ) !== -1;
+                    };
+                }
+
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'samplesite-terminalfour'; // required: replace example with your forum shortname
+                /* <t4 type="meta" meta="content_id" />
+                            Unique ID for post. Use the default fulltext filename
+                            See: http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier
+                        */
+                var disqus_identifier = '{{contentId}}';
+                /* 
+                            Thread title. Use the Title element for the blog
+                            See: http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_title
+                        */
+                var disqus_title = '{{publish element="Title"}}';
+                /* 
+                            Thread URL. Please uncomment and set up as appropriate for this blog.
+                            Use the Fulltext fully qualified URL for the blog
+                            See: http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_title
+                        */
+                var disqus_url = '{{fulltextURL}}';
+
+                function disqus_config() {
+                    this.callbacks.onNewComment = [function(comment) { 
+                    resizeDivsAfterComment();
+                    }];
+                }
+
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        {{~/preview}}
+    </div>  
+</div>

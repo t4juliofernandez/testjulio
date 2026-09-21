@@ -1,0 +1,34 @@
+</div>
+
+								</div>
+
+								{{nav name="Events Calendar: Get Sidebar" id="75" }}
+
+						</div>
+
+				</div>
+
+		</div>
+
+</main>
+
+	{{nav name="Footer Main" id="6" }}
+	<!--<t4 type="edit-page" action="direct-edit" text="&copy;" />-->
+<a href="{{{directEditSection}}}">Edit this page</a>
+	{{nav name="Footer Bottom" id="43" }}
+
+    {{ nav name="Return Gallery JS" id="111" }}
+    	{{ nav name="Return PHP Search JS" id="114" }}
+
+
+{{{media id="12" layout="javascript/*"}}} <!--main js-->
+{{{media id="1939" layout="javascript/*"}}} <!--only events calendar js-->
+{{{media id="1614" layout="javascript/*"}}} <!--site wide notice-->
+{{{media id="991" layout="javascript/*"}}}<!-- cookie js-->
+
+
+
+
+
+</body>
+</html>

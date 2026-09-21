@@ -1,0 +1,33 @@
+try {
+  //Defining main functions
+  function processTags(t4Tag) {
+    myContent = content || null;
+    return String(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, myContent, language, isPreview, t4Tag));
+  }
+
+  function getLayout(contentLayout) {
+    var tid = content.getContentTypeID();
+    formatter = contentLayout;
+    format = publishCache.getTemplateFormatting(dbStatement, tid, formatter);
+    formatString = format.getFormatting();
+    return processTags(formatString);
+  }
+
+  var list = {};
+
+  list['contentID'] = processTags('<t4 type="meta" meta="content_id" />');
+  list['blogURL'] = processTags('<t4 type="navigation" name="Path to current section" id="79" />');
+  list['blogTitle'] = processTags('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />');
+  list['blogImage'] = processTags('<t4 type="content" name="Image" output="normal" formatter="path/*" />');
+  list['blogAuthor'] = processTags('<t4 type="content" name="Author" output="normal" modifiers="striptags,htmlentities" />');
+  list['blogDate'] = processTags('<t4 type="content" name="Published Date" output="normal" date_format="d MMMM, yyyy" />');
+  list['blogDateSort'] = processTags('<t4 type="content" name="Published Date" output="normal" date_format="yyyyMMdd" />');
+  list['blogCategories'] = processTags('<t4 type="content" name="Blog Category" output="normal" display_field="value" />');
+  list['blogAbstract'] = processTags('<t4 type="content" name="Abstract" output="normal" modifiers="striptags,htmlentities" />');
+
+  var jsonObj = new org.json.JSONObject(list);
+  document.write(jsonObj.toString() + ',');
+
+} catch (err) {
+  document.write(err);
+}

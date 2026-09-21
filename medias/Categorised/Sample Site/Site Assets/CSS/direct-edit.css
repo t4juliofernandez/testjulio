@@ -1,0 +1,69 @@
+/* Contains styles to pages more usable in Direct Edit */
+
+/* Hide mega menu drop downs */
+.navbar-secondary ul ul{
+	display:none;
+}
+
+/* Add styles to main menu items, classes are added via JS to do this but we don't include the JS in direct edit mode as it causes other issues */
+.navbar-secondary .navbar-nav li{
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0.5rem 1.5rem;
+}
+
+.navbar-secondary .navbar-nav li a{
+	color: #355458!important;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+	text-decoration: none;
+}
+
+/* Remove sticky from header */
+.header {
+	position: relative !important;
+}
+
+/* Breadcrumbs - relies on classes injected with JS */
+.breadcrumb-t4 li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumb-t4 li a{
+	font-weight: 500;
+    color: #355458;
+}
+
+.breadcrumb-t4 li:before {
+    position: relative;
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.5rem;
+}
+
+.breadcrumb-t4 li:first-child:before {
+    margin: 0 -0.5rem;
+}
+
+.breadcrumb-t4 li+li:before {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgZmlsbD0nIzM1NTQ1OCcgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PHBhdGggZD0nTTEyIDRsLTEuNDEgMS40MUwxNi4xNyAxMUg0djJoMTIuMTdsLTUuNTggNS41OUwxMiAyMGw4LTh6Jy8+PC9zdmc+);
+}
+
+/* Get Related News Slider to display fairly */
+.news-slider-list .card-t4.swiper-slide {
+    visibility: visible;
+    width: 33.33%;
+}
+
+/* Hide header Placeholder */
+.no-js .header-placeholder {
+    height: 0;
+}

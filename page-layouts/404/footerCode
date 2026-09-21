@@ -1,0 +1,9 @@
+	</main>
+	{{nav name="Footer Main" id="6" }}
+	<!--<t4 type="edit-page" action="direct-edit" text="&copy;" >-->
+	<a href="{{{directEditSection}}}">Edit this page</a>
+	{{nav name="Footer Bottom" id="43" }}
+  {{{snippet layout="text/page-scripts"}}}
+{{nav name="Get text/data-js layout for searchable table content type" id="147" }}
+</body>
+</html>

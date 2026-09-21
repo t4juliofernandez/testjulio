@@ -1,0 +1,19 @@
+<meta property="description" content="{{#ifSet element="Meta Description"}}{{publish element="Meta Description"}}{{else}}{{publish element="Abstract"}}{{/ifSet}}">
+{{#ifSet element="Keywords" ~}}<meta property="keywords" content="{{publish element="Keywords"}}">{{~/ifSet}}
+<meta property="og:type" content="article">
+{{nav id="120" name="Return Meta Sitename"}}
+<meta property="og:title" content="{{#ifSet element="Meta Title"}}{{publish element="Meta Title"}}{{else}}{{publish element="Title"}}{{/ifSet}}">
+<meta property="og:description" content="{{#ifSet element="Meta Description"}}{{publish element="Meta Description"}}{{else}}{{publish element="Abstract"}}{{/ifSet}}">
+<meta property="og:image" content="{{nav id="81" name="Get Channel Publish URL"}}{{{media id=(mediaId element="Image") layout="path/*"}}}">
+<meta property="og:image:alt" content="{{{media id=(mediaId element="Image") layout="description/*"}}}">
+<meta property="og:url" content="{{#preview}}{{else}}{{snippet layout="text/channel-publish-url"}}{{/preview}}{{fulltextURL}}">
+<meta name="twitter:card" content="summary_large_image">
+{{nav id="121" name="Return Meta Twitter Handle"}}
+<meta name="twitter:title" content="{{#ifSet element="Meta Title"}}{{publish element="Meta Title"}}{{else}}{{publish element="Title"}}{{/ifSet}}">
+<meta name="twitter:description" content="{{#ifSet element="Meta Description"}}{{publish element="Meta Description"}}{{else}}{{publish element="Abstract"}}{{/ifSet}}">
+<meta name="twitter:image" content="{{nav id="81" name="Get Channel Publish URL"}}{{{media id=(mediaId element="Image") layout="path/*"}}}">
+<meta name="twitter:image:alt" content="{{{media id=(mediaId element="Image") layout="description/*"}}}">
+<meta name="twitter:url" content="{{#preview}}{{else}}{{snippet layout="text/channel-publish-url"}}{{/preview}}{{fulltextURL}}">
+<meta name="date" content="{{dateFormat (dateElement element="Published Date") "yyyy-MM-dd" }}">
+<meta property="article:published_time" content="{{dateFormat (dateElement element="Published Date") "yyyy-MM-dd'T'HH:mm:ss" }}">
+{{#ifSet element="Author" ~}}<meta name="post_author" content="{{publish element="Author"}}">{{~/ifSet}}

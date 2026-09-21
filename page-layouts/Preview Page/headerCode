@@ -1,0 +1,63 @@
+{{nav name="get PHP Head" id="66" }}
+<!DOCTYPE html>
+<html lang="en" class="no-js {{nav name="get Direct Edit Script" id="112" }}">
+<head>  
+  {{>metaTags}}  
+  {{>favicons}}
+  {{>headCSSScripts}}
+
+    
+    <script src="https://kit.fontawesome.com/8e0910d0ac.js" crossorigin="anonymous"></script>
+</head>
+    
+<body>
+  
+  <iframe src="{{nav name="Path to Home" id="18" }}"></iframe>
+  
+  {{#preview}}
+  
+    <style>
+      body {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .magic-config {
+        display: block;
+        position: fixed;
+        z-index: 99999999;
+        background-color: rgba(0, 0, 0, 0.7);
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        height: 48px;
+      }
+      iframe {
+        width: 100%;
+        height: 100vh;
+      }
+      .t4-config {
+        height: 48px;
+        margin: 0 16px;
+        color: #FFF;
+        font-size: 30px;
+      }
+    </style>
+
+    <div class="magic-config">
+      <button class="t4-config" data-width="450px"><i class="fa-solid fa-mobile-screen-button" style="pointer-events:none"></i></button>
+      <button class="t4-config" data-width="996px"><i class="fa-solid fa-tablet-screen-button" style="pointer-events:none"></i></button>
+      <button class="t4-config" data-width="100%"><i class="fa-solid fa-desktop" style="pointer-events:none"></i></button>
+    </div>
+
+    <script>
+      const body = document.querySelector('iframe');
+      document.querySelectorAll('.t4-config').forEach(button => {
+        button.addEventListener('click', (e) => {
+          let b = e.target;
+          let w = b.getAttribute('data-width');
+          body.style.width = w;
+        });
+      });
+    </script>
+
+  {{/preview}}    

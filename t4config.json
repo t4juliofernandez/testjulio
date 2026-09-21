@@ -1,0 +1,224 @@
+{
+  "environments": {
+    "Test BDA 1": "3f0ffe7d-4f8d-416a-8635-ba80fc92c338",
+    "Test BDA 2": "a179f162-59bf-4a05-9070-bba3a11b2f9b"
+  },
+  "assets": {
+    "contentLayouts": [
+      {
+        "id": 1400,
+        "projectPath": "content-types/Blog - Sample Site/text-blog-category"
+      },
+      {
+        "id": 1401,
+        "projectPath": "content-types/Blog - Sample Site/text-blog-featured"
+      },
+      {
+        "id": 1102,
+        "projectPath": "content-types/Blog - Sample Site/text-blog-json"
+      },
+      {
+        "id": 1402,
+        "projectPath": "content-types/Blog - Sample Site/text-blog-latest"
+      },
+      {
+        "id": 1403,
+        "projectPath": "content-types/Blog - Sample Site/text-blog-list"
+      },
+      {
+        "id": 277,
+        "projectPath": "content-types/Blog - Sample Site/text-fulltext"
+      },
+      {
+        "id": 1052,
+        "projectPath": "content-types/Blog - Sample Site/text-fulltext-meta"
+      },
+      {
+        "id": 1405,
+        "projectPath": "content-types/Blog - Sample Site/text-fulltext-meta-content"
+      },
+      {
+        "id": 276,
+        "projectPath": "content-types/Blog - Sample Site/text-html"
+      },
+      {
+        "id": 273,
+        "projectPath": "content-types/Blog - Sample Site/text-page-layout"
+      },
+      {
+        "id": 1083,
+        "projectPath": "content-types/Blog Finder Configuration - Sample Site/text-autocomplete"
+      },
+      {
+        "id": 1084,
+        "projectPath": "content-types/Blog Finder Configuration - Sample Site/text-config"
+      },
+      {
+        "id": 1085,
+        "projectPath": "content-types/Blog Finder Configuration - Sample Site/text-html"
+      },
+      {
+        "id": 1086,
+        "projectPath": "content-types/Blog Finder Configuration - Sample Site/text-json-ptof"
+      },
+      {
+        "id": 1087,
+        "projectPath": "content-types/Blog Finder Configuration - Sample Site/text-php-head"
+      }
+    ],
+    "pageLayouts": [
+      {
+        "id": 988,
+        "headerCode": "page-layouts/404/headerCode",
+        "footerCode": "page-layouts/404/footerCode"
+      },
+      {
+        "id": 359,
+        "headerCode": "page-layouts/Blank/headerCode",
+        "footerCode": "page-layouts/Blank/footerCode"
+      },
+      {
+        "id": 1154,
+        "headerCode": "page-layouts/Blank PHP/headerCode",
+        "footerCode": "page-layouts/Blank PHP/footerCode"
+      },
+      {
+        "id": 2058,
+        "headerCode": "page-layouts/Catalog Builder - Sample Site/headerCode",
+        "footerCode": "page-layouts/Catalog Builder - Sample Site/footerCode"
+      },
+      {
+        "id": 1515,
+        "headerCode": "page-layouts/Component Library - Sample Site/headerCode",
+        "footerCode": "page-layouts/Component Library - Sample Site/footerCode"
+      },
+      {
+        "id": 835,
+        "headerCode": "page-layouts/Empty Page Layout/headerCode",
+        "footerCode": "page-layouts/Empty Page Layout/footerCode"
+      },
+      {
+        "id": 607,
+        "headerCode": "page-layouts/Events Calendar Module Page - Sample Site/headerCode",
+        "footerCode": "page-layouts/Events Calendar Module Page - Sample Site/footerCode"
+      },
+      {
+        "id": 5,
+        "headerCode": "page-layouts/Homepage - Sample Site/headerCode",
+        "footerCode": "page-layouts/Homepage - Sample Site/footerCode"
+      },
+      {
+        "id": 117,
+        "headerCode": "page-layouts/Inner Page Full Width - Sample Site/headerCode",
+        "footerCode": "page-layouts/Inner Page Full Width - Sample Site/footerCode"
+      },
+      {
+        "id": 118,
+        "headerCode": "page-layouts/Inner Page Left Navigation - Sample Site/headerCode",
+        "footerCode": "page-layouts/Inner Page Left Navigation - Sample Site/footerCode"
+      },
+      {
+        "id": 6,
+        "headerCode": "page-layouts/Landing Page - Sample Site/headerCode",
+        "footerCode": "page-layouts/Landing Page - Sample Site/footerCode"
+      },
+      {
+        "id": 1078,
+        "headerCode": "page-layouts/News Finder - Sample Site/headerCode",
+        "footerCode": "page-layouts/News Finder - Sample Site/footerCode"
+      },
+      {
+        "id": 166,
+        "headerCode": "page-layouts/Newsroom - Sample Site/headerCode",
+        "footerCode": "page-layouts/Newsroom - Sample Site/footerCode"
+      },
+      {
+        "id": 1910,
+        "headerCode": "page-layouts/Preview Page/headerCode",
+        "footerCode": "page-layouts/Preview Page/footerCode"
+      },
+      {
+        "id": 682,
+        "headerCode": "page-layouts/Program Search - Sample Site/headerCode",
+        "footerCode": "page-layouts/Program Search - Sample Site/footerCode"
+      },
+      {
+        "id": 729,
+        "headerCode": "page-layouts/Staff Directory Module Page - Sample site/headerCode",
+        "footerCode": "page-layouts/Staff Directory Module Page - Sample site/footerCode"
+      },
+      {
+        "id": 1938,
+        "headerCode": "page-layouts/Testing Events Calendar Module Page - No Jquery - Sample Site/headerCode",
+        "footerCode": "page-layouts/Testing Events Calendar Module Page - No Jquery - Sample Site/footerCode"
+      },
+      {
+        "id": 1947,
+        "headerCode": "page-layouts/Testing Events Calendar Month View Page - No Jquery - Sample Site/headerCode",
+        "footerCode": "page-layouts/Testing Events Calendar Month View Page - No Jquery - Sample Site/footerCode"
+      }
+    ],
+    "media": [
+      {
+        "id": 13,
+        "description": "Sample Site CSS",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/CSS/t4samplesite.css"
+      },
+      {
+        "id": 14,
+        "description": "TinyMCE CSS",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/CSS/tinymce.css"
+      },
+      {
+        "id": 995,
+        "description": "Quicklinks",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/CSS/quicklinks.css"
+      },
+      {
+        "id": 1024,
+        "description": "direct-edit.css",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/CSS/direct-edit.css"
+      },
+      {
+        "id": 1077,
+        "description": "Updated CSS (((TEST)))",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/CSS/t4samplesite.css"
+      },
+      {
+        "id": 12,
+        "description": "Sample Site JS",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/t4samplesite.js"
+      },
+      {
+        "id": 335,
+        "description": "Emergency Notice JSON",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/emergency-notice.json"
+      },
+      {
+        "id": 337,
+        "description": "JQuery",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/jquery.min.js"
+      },
+      {
+        "id": 991,
+        "description": "Personalization Cookie",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/cookie.js"
+      },
+      {
+        "id": 1614,
+        "description": "combined-emergency-site-wide",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/combined-emergency-site-wide.js"
+      },
+      {
+        "id": 1617,
+        "description": "samplesite-js-no-notices",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/samplesite-js-no-notices.js"
+      },
+      {
+        "id": 2120,
+        "description": "php-events-calendar-mini-featured.js",
+        "projectPath": "medias/Categorised/Sample Site/Site Assets/JS/php-events-calendar.js"
+      }
+    ]
+  }
+}
