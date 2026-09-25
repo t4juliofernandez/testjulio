@@ -1,0 +1,60 @@
+body {margin:0; padding:0; line-height: 1.6em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000;}
+
+/*Header*/
+h2 {color:#000; font-size:25px;}
+.post .entry h2 {font-size:20px;}
+
+/* Links */
+a:link, a:visited {background: transparent; color:#333; text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="http://"] {color:#000;} 
+/* Links  https*/
+a:link[href^="https://"]:after, a[href^="https://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="https://"] {color:#000;line-height:28px;} 
+a[href]:after {content:"" !important;}
+
+/*Image*/
+img, img a, .more-link a {border:none;}
+
+/*General*/
+.small-12 nav.breadcrumbs {display:block; background:none;}
+#QL-Default {display:none;}
+.large-7 {width:100%;}   
+.fb_iframe_widget {display:none;}
+.fb-page {display: none !important;}
+.button {display:none}
+.breadcrumbs {display:block;}
+.header-links {display:none;}
+#comments {display:none;}
+.fa-plus {display:none;}
+#submitBTN {display:none;}
+.course_compare_buttons {display:none;}
+.accordion .content {display: block;padding: 0.9375rem}
+.accordion .content.active {display: block;color:black}
+.menu-icon {display:none;}
+.medium-4 nav {display:none;}
+.small-12.medium-3.medium-pull-9.columns nav {display:none;}
+.small-12.medium-4.columns nav {display:none;}
+.searchForm {display:none;}
+.social-footer {display:none;}
+.accordion .content {display:block;}
+.button {display:none;	}
+.orbit-container .orbit-slides-container img {display:none;}
+.homepage-orbit orbit-slides-container{display:none;}
+input[type=submit] {display:none;}
+.orbit-container {display:none;}
+.side-nav {display:none;}
+.flex-video {display:none;}
+.parallax {display:none;}
+.global-footer .small-12 ul{display:none;}
+.snippet .event-info {float:left;}
+#event-map img {display:block;}
+#event-map a:link[href^="https://"]:after, a[href^="https://"]:visited:after {content: ""; font-size: 11px;}
+#event-map a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: ""; font-size: 11px;}
+.course-search-widget {display:none;}
+.advanced-course-search-filters {display:none;}
+a.rss-icon-link{display:none;}
+.pagination{display:none;}
+.prev-next{display:none;}
+.home-content img {display:none;}
+.main-content img {display:none;}

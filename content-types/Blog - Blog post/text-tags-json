@@ -1,0 +1,28 @@
+try {
+  //Defining main functions
+  function processTags(t4Tag) {
+    myContent = content || null;
+    return String(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, myContent, language, isPreview, t4Tag));
+  }
+
+  function getLayout(contentLayout) {
+        var tid = content.getContentTypeID();
+        formatter     = contentLayout;
+        format        = publishCache.getTemplateFormatting(dbStatement, tid, formatter);
+        formatString  = format.getFormatting();
+        return processTags(formatString);
+  }
+
+  var list = {};
+
+
+  list['tags']      = processTags('<t4 type="content" name="Tag 1" output="normal" />,<t4 type="content" name="Tag 2" output="normal"  />,<t4 type="content" name="Tag 3" output="normal"  />,<t4 type="content" name="Tag 4" output="normal" />,<t4 type="content" name="Tag 5" output="normal" />,<t4 type="content" name="Tag 6" output="normal"   />,<t4 type="content" name="Tag 7" output="normal" />');
+  list['html'] 	  =	getLayout('text/html');
+
+  var jsonObj = new org.json.JSONObject(list);
+  document.write(jsonObj.toString() + ',');
+
+}
+catch(err) {
+	document.write(err);
+}

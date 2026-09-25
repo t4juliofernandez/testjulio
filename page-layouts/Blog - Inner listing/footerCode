@@ -1,0 +1,27 @@
+			  <!-- END SITE MANAGER LIVE CONTENT -->
+                          <!--** Back to top link **-->
+                          <a href="#top" class="visible-tablet back-to-top" title="Back to top"><span class="fa fa-arrow-up back-arrow"></span>Back to top</a>
+                          <!--** Back button **-->
+			  			  <a class="dark-grey-grad back-to-blog-home" href="<t4 type="navigation" id="64"/>"><span class="fa fa-arrow-left back-arrow"></span><span class="back-to-blogs-arrow">Back to main listing</span></a>
+
+<!-- start of SM footer -->
+  </div>
+
+ <div class="small-12 medium-4 columns"> 
+
+    <t4 type="navigation" name="Sidebar" id="24" />
+    
+  </div><!-- /.medium-4 -->
+</div>
+  
+    <t4 type="navigation" name="Main Footer Content" id="11" /> <!-- footer code -->
+    
+    <a class="exit-off-canvas"></a>
+  </div><!-- /.inner-wrap -->
+</div><!-- /.off-canvas-wrap -->
+
+ <t4 type="navigation" name="Asset References - Footer" id="12" /> <!-- footer assets -->
+
+
+</body>
+</html>

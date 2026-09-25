@@ -1,0 +1,75 @@
+<article class="<t4 type="content" name="Feature image" output="selective-output" modifiers="" format="has-image"  /> <t4 type="content" name="Feature YouTube video ID" output="selective-output" modifiers="" process-format="true" format="has-image" /> listing cf" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+
+
+
+
+  <t4 type="content" name="Feature image" output="selective-output" process-format="true" format="<div class=&quot;article-image flex-box&quot;>
+                                                                                                  <img itemprop=&quot;image&quot; class=&quot;hidden-tablet&quot; src=&quot;<t4 type=&quot;content&quot; name=&quot;Feature image&quot; output=&quot;normal&quot; modifiers=&quot;&quot; formatter=&quot;path/*&quot;  />&quot; alt=&quot;<t4 type=&quot;content&quot; name=&quot;Feature image caption&quot; output=&quot;normal&quot; modifiers=&quot;striptags, htmlentities&quot;  />&quot; />
+                                                                                                  <t4 type=&quot;content&quot; name=&quot;Feature image responsive&quot; output=&quot;selective-output&quot; process-format=&quot;true&quot; format=&quot;<img itemprop='image' class='visible-tablet' src='<t4 type='content' name='Feature image responsive' output='normal' modifiers='' formatter='path/*'  />' alt='<t4 type='content' name='Feature image caption' output='normal' modifiers='striptags, htmlentities'  />' />&quot;  />                               
+                                                                                                  </div>" formatter="" />
+
+
+
+
+  <t4 type="content" name="Feature YouTube video ID" output="selective-output" modifiers="" process-format="true" format="
+                                                                                                                          <div class='article-image <t4 type='content' name='Feature YouTube video ID' output='selective-output' modifiers='' process-format='true' format='video' />  flex-box'>
+                                                                                                                          <a data-lightview-type='iframe' class='lightview overlay' data-lightview-title='<t4 type='content' name='Feature YouTube video caption' output='normal' modifiers='striptags, htmlentities'  />'  data-lightview-options='width: 638,height: 360,viewport: 'scale'' href='http://www.youtube.com/embed/<t4 type='content' name='Feature YouTube video ID' output='normal' modifiers='striptags'  />?autoplay=1&amp;autohide=1&amp;border=0&amp;egm=0&amp;showinfo=0'>
+                                                                                                                          </a>
+                                                                                                                          <img src='http://img.youtube.com/vi/<t4 type='content' name='Feature YouTube video ID' output='normal' modifiers='striptags'  />/0.jpg' alt='<t4 type='content' name='Feature video caption' output='normal' modifiers='striptags, htmlentities'  />'>
+
+                                                                                                                          </div>
+                                                                                                                          "  />
+
+  <div class="article-content-wrapper large-12 medium-12 small-12">
+
+    <div class="article-info large-3 medium-3 small-12">
+      <ul>
+        <li> <time itemprop="dateCreated" datetime="<t4 type="content" name="Blog date" output="normal" date_format="yyyy-MM-dd H:m" modifiers=""  />"><t4 type="content" name="Blog date" output="normal" modifiers="" date_format="d MMMM, yyyy"  /></time></li>
+
+
+        <t4 type="content" name="Author name" output="selective-output" modifiers="" process-format="true" format="
+                                                                                                                   <li>  <span class='user hidden-phone' itemprop='author' itemscope itemtype='http://schema.org/Person'>
+                                                                                                                   <span itemprop='name'><t4 type='content' name='Author name' output='normal' modifiers='striptags, htmlentities'  /></span>
+                                                                                                                   </span> 
+                                                                                                                   </li>
+                                                                                                                   " />        
+
+
+        <!-- Blog Tags
+<t4 type="content" name="Tag 1" output="selective-output" modifiers="" format="-->" />
+
+        <li data-t4-url="<t4 id='69' type='navigation' />?search=">Tags:
+          <t4 type="content" name="Tag 1" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+          <t4 type="content" name="Tag 2" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+          <t4 type="content" name="Tag 3" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+          <t4 type="content" name="Tag 4" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+          <t4 type="content" name="Tag 5" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+          <t4 type="content" name="Tag 6" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+          <t4 type="content" name="Tag 7" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+        </li>
+        <t4 type="content" name="Tag 1" output="selective-output" modifiers="" format="<!--" />
+        / Blog Tags -->
+      </ul>
+    </div>
+
+    <div class="article-heading flex-box cf large-9 medium-9 small-12">
+      <h2><a href="<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />" itemprop="headline"><t4 type="content" name="Title" output="normal" modifiers="striptags, htmlentities"  /></a></h2>
+      <span class="post-info smaller">
+
+
+      </span>
+
+      <p itemprop="description" class="intro"><t4 type="content" name="Abstract" output="normal" modifiers="striptags, htmlentities"  /></p>
+
+
+      <div class="left">
+        <span class="comments-count smaller"><a itemprop="discussionUrl" href="<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />" title="Read More">Comments</a></span>
+
+      </div>
+      <a href="<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />" class="read-more blue-grad button" title="Read more">Read More...</a>
+    </div>
+
+
+  </div>
+
+</article>

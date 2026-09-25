@@ -1,0 +1,89 @@
+<t4 type="navigation" name="Return PHP to top of document" id="238" />
+<!doctype html>
+<t4 type="navigation" name="Conditional Statements" id="21" />
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><t4 type="title" append-content="true" append-element="Title" separator=": " /> - TERMINALFOUR University</title>
+      <!-- Inner page left nav -->
+    <t4 type="navigation" id="1" />
+    <t4 type="navigation" name="Google Analytics" id="61" />
+    <t4 type="meta" id="12" /><!-- description -->
+    <t4 type="meta" id="14" /><!-- keywords -->
+    
+    <t4 type="meta" id="22" /><!-- course code -->
+    <t4 type="meta" id="24" /><!-- course type -->
+    <t4 type="meta" id="20" /><!-- location -->
+    <t4 type="meta" id="23" /><!-- category -->
+    <t4 type="meta" id="21" /><!-- course accreditation -->
+    <t4 type="meta" id="26" /><!-- start date -->
+    <t4 type="meta" id="25" /><!-- end date -->
+    
+    <t4 type="meta" id="27" /><!-- og:description -->
+    <t4 type="meta" id="18" /><!-- og:image -->
+    <t4 type="navigation" name="get Extra OG Tags" id="221" />
+    
+    <t4 type="meta" id="34" output_to_index="false" /><!-- article:author -->
+    <t4 type="meta" id="28" output_to_index="false" /><!-- article:publish_time -->
+    <t4 type="meta" id="29" output_to_index="false" /><!-- article:section -->
+    <t4 type="meta" id="33" output_to_index="false" /><!-- article:tag -->
+    
+    <t4 type="meta" id="32" output_to_index="false" /><!-- profile:first_name -->
+    <t4 type="meta" id="30" output_to_index="false" /><!-- profile:last_name -->
+    <t4 type="navigation" name="Return Style to head of Page" id="235" />
+    
+  </head>
+
+<body>
+
+<div class="off-canvas-wrap" >
+  <div class="inner-wrap">
+     <t4 type="navigation" name="Header Code" id="3" />
+
+  <div class="contain-to-grid sticky" data-t4-compare-ignore="header">
+  
+    <nav class="primary-nav top-bar" data-topbar data-options="sticky_on: large">
+      
+      <ul class="title-area">
+        <li class="name"><a href="<t4 type="navigation" name="Link to home" id="2" />"><span class="wai hidden">Home</span></a></li><!-- need to leave this in but empty for menu to function correctly -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      
+      <div class="top-bar-section">
+        <div class="row collapse">
+        <ul class="left large-8 columns">
+          <t4 type="navigation" name="Navigation - Visible links at level 2" id="6" />
+          <t4 type="navigation" name="Navigation - Links for small screens" id="7" />
+
+        </ul>
+
+           <t4 type="navigation" name="Search Box Code" id="8" /> <!-- search box code -->
+
+        </div>
+      </div>
+      
+    </nav>
+  </div><!-- /.sticky -->
+<div class="emergencynotice" aria-live="assertive" data-t4-emergency-notices="<t4 type="media" formatter="path/*" id="10706" />"></div>
+<t4 type="navigation" name="Current Section Parallax" id="10" /> <!-- current section parallax -->    
+
+<div class="row main-content">
+  <div class="small-12 medium-9 medium-push-3 columns">
+
+    
+<!-- breadcrumbs -->    
+<div class="row"><div class="small-12 columns">
+  <nav class="breadcrumbs">
+	<t4 type="navigation" name="Breadcrumbs" id="22" />
+  </nav>
+</div>
+</div>
+  <!-- ./breadcrumbs -->    
+    
+    
+  
+      <h1><t4 type="title"/></h1>
+
+           <!-- end of SM header -->

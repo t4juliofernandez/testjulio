@@ -1,0 +1,22 @@
+<!-- Start of footer -->
+  </div>
+
+
+</div> <!-- end row -->
+  
+   <t4 type="navigation" name="Main Footer Content" id="11" /> <!-- footer code -->
+    
+    <a class="exit-off-canvas"></a>
+  </div><!-- /.inner-wrap -->
+</div><!-- /.off-canvas-wrap -->
+
+ <t4 type="navigation" name="Asset References - Footer" id="12" /> <!-- footer assets -->
+
+<!-- text/scripts-->
+<t4 type="navigation" name="Current Section text scripts" id="13" />
+<!-- text/scripts-->
+
+<!-- End of footer -->
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+      <!-- start of SM footer --> 
+
+
+      <!-- Navigation - Main Footer Content #11 -->
+      <t4 type="navigation" name="Main Footer Content" id="11" />
+      <!-- / Navigation - Main Footer Content #11 -->
+
+
+      <a class="exit-off-canvas"></a>
+    </div><!-- /.inner-wrap -->
+  </div><!-- /.off-canvas-wrap -->
+
+  <!-- Navigation - Asset References - Footer #12 -->
+  <t4 type="navigation" name="Asset References - Footer" id="12" />
+  <!-- / Navigation - Asset References - Footer #12 -->
+
+  <!-- Navigation - text/script #13 -->
+  <t4 type="navigation" name="Current Section text&#x2F;scripts" id="13" />
+  <!-- / Navigation - text/script #13 -->
+
+  <script type="text/javascript">
+    function equalHeight(group) {
+      var tallest = 0;
+
+      group.each(function() {
+        var thisHeight = $(this).height();
+        
+        if(thisHeight > tallest) {
+          tallest = thisHeight;
+        }
+      });
+      group.height(tallest);
+    }
+
+    equalHeight($(".doormat"));
+  </script>
+  <div style="display:none"><t4 type="edit-page" action="direct-edit" text="&copy;" /></div>
+</body>
+</html>

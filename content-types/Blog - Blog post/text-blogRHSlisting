@@ -1,0 +1,13 @@
+<article class="<t4 type="content" name="Feature image" output="selective-output" modifiers="" format="has-image"  /> listing cf" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  <h4><a href="<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />" itemprop="headline"><t4 type="content" name="Title" output="normal" modifiers="striptags, htmlentities"  /></a></h4>
+  <span class="post-info smaller">
+    <time itemprop="dateCreated" datetime="<t4 type="content" name="Blog date" output="normal" date_format="yyyy-MM-dd H:m" modifiers=""  />">
+      <t4 type="content" name="Blog date" output="normal" modifiers="" date_format="d MMMM, yyyy"  />
+    </time>
+  </span>
+  <span class="comments-count smaller">
+    <a itemprop="discussionUrl" href="<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />#disqus_thread" title="Read More">Comments</a>
+  </span>
+  <p itemprop="description" class="intro"><t4 type="content" name="Abstract" output="normal" modifiers="striptags, htmlentities"  /></p>
+  <a href="<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />" class="read-more smaller" title="Read more">Read More...</a>
+</article>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Screen Demo - TERMINALFOUR University</title>
+	<link rel="stylesheet" href="<t4 type="media" formatter="path/*" id="4635" />">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+    <div class="slick">

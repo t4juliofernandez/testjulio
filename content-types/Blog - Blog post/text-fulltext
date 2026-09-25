@@ -1,0 +1,111 @@
+<article class="blog-full cf">
+  <h1><t4 type="content" name="Title" output="normal" modifiers="striptags, htmlentities"  /></h1>
+  <h2 class="author"><t4 type="content" name="Author name" output="normal" modifiers="striptags, htmlentities"  /> <time datetime="<t4 type="content" name="Blog date" output="normal" date_format="yyyy-MM-dd H:m" modifiers=""  />"><t4 type="content" name="Blog date" output="normal" modifiers="" date_format="d MMMM, yyyy"  /></time></h2>
+
+  <t4 type="content" name="Feature YouTube video ID" output="selective-output" modifiers="" process-format="true" format="
+                                                                                                                          <div class='featured-media <t4 type='content' name='Feature YouTube video ID' output='selective-output' modifiers='' process-format='true' format='video' /> flex-box'>
+                                                                                                                          <a data-lightview-type='iframe' class='lightview overlay' data-lightview-title='<t4 type='content' name='Feature YouTube video caption' output='normal' modifiers='striptags, htmlentities'  />'  data-lightview-options='width: 638,height: 360,viewport: 'scale'' href='http://www.youtube.com/embed/<t4 type='content' name='Feature YouTube video ID' output='normal' modifiers='striptags'  />?autoplay=1&amp;autohide=1&amp;border=0&amp;egm=0&amp;showinfo=0'>
+                                                                                                                          </a>
+                                                                                                                          <img src='http://img.youtube.com/vi/<t4 type='content' name='Feature YouTube video ID' output='normal' modifiers='striptags'  />/0.jpg' alt='<t4 type='content' name='Feature video caption' output='normal' modifiers='striptags, htmlentities'  />'>
+                                                                                                                          <p class='media-caption'><t4 type='content' name='Feature YouTube video caption' output='normal' modifiers='striptags, htmlentities'  /></p>
+
+                                                                                                                          </div>
+                                                                                                                          "  />
+
+
+  <t4 type="content" name="Feature image" output="selective-output" process-format="true" format="<div class=&quot;article-image flex-box&quot;>
+                                                                                                  <img itemprop=&quot;image&quot; class=&quot;hidden-tablet&quot; src=&quot;<t4 type=&quot;content&quot; name=&quot;Feature image&quot; output=&quot;normal&quot; modifiers=&quot;&quot; formatter=&quot;path/*&quot;  />&quot; alt=&quot;<t4 type=&quot;content&quot; name=&quot;Feature image caption&quot; output=&quot;normal&quot; modifiers=&quot;striptags, htmlentities&quot;  />&quot; />
+                                                                                                  <t4 type=&quot;content&quot; name=&quot;Feature image responsive&quot; output=&quot;selective-output&quot; process-format=&quot;true&quot; format=&quot;<img itemprop='image' class='visible-tablet' src='<t4 type='content' name='Feature image responsive' output='normal' modifiers='' formatter='path/*'  />' alt='<t4 type='content' name='Feature image caption' output='normal' modifiers='striptags, htmlentities'  />' />&quot;  />                               
+                                                                                                  </div>" formatter="" />
+
+
+
+
+  <t4 type="content" name="Blog main body" output="normal" modifiers="medialibrary, nav_sections"  />
+  <!-- Blog Tags
+        <t4 type="content" name="Tag 1" output="selective-output" modifiers="" format="-->" />
+  <p data-t4-url="<t4 id='69' type='navigation' />?search=">
+    <strong>Tags:</strong>
+    <t4 type="content" name="Tag 1" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+    <t4 type="content" name="Tag 2" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+    <t4 type="content" name="Tag 3" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+    <t4 type="content" name="Tag 4" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+    <t4 type="content" name="Tag 5" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+    <t4 type="content" name="Tag 6" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+    <t4 type="content" name="Tag 7" output="selective-output" modifiers="" process-format="true" format="<a href='#'>$value</a>" />
+  </p>
+  <t4 type="content" name="Tag 1" output="selective-output" modifiers="" format="<!--" />
+        / Blog Tags -->
+  <div class="share-page">
+    <h3>Share this story</h3>
+    <a href="https://twitter.com/share" style="margin-right: 1em;" class="twitter-share-button" data-via="TERMINALFOUR">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+      lang: en_US
+    </script>
+    <script type="IN/Share" data-counter="right"></script>
+
+  </div>                                  
+
+</article>
+
+<div id="comments">
+  <h3>Comments</h3>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* Polyfill String.contains */
+    if ( !String.prototype.contains ) {
+      String.prototype.contains = function() {
+        return String.prototype.indexOf.apply( this, arguments ) !== -1;
+      };
+    }
+    /* 
+                                        if location ! contains http://samplesite.terminalfour.com/ 
+                                        Do disqus comments
+                                        Else don't
+                                        Discus sets up the URL for a comment based on the current URL of the document. If we are in preview and someone adds a comment that comment will have URL of the preview fulltext filename
+                                      */
+    if (window.location.href.contains("//samplesite.terminalfour.com/") || window.location.href.contains("//t4sampledata.terminalfour.com/")) { 
+
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'samplesite-terminalfour'; // required: replace example with your forum shortname
+      /* <t4 type="meta" meta="content_id" />
+                  Unique ID for post. Use the default fulltext filename
+                  See: http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_identifier
+            */
+      var disqus_identifier = '<t4 type="meta" meta="content_id" />';
+      /* 
+                  Thread title. Use the Title element for the blog
+                  See: http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_title
+            */
+      var disqus_title = "<t4 type="content" name="Title" output="normal" modifiers="striptags, htmlentities"  />";
+      /* 
+                  Thread URL. Please uncomment and set up as appropriate for this blog.
+                  Use the Fulltext fully qualified URL for the blog
+                  See: http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables#disqus_title
+            */
+      var disqus_url = 'https://samplesite.terminalfour.com<t4 type="content" name="Title" output="fulltext" modifiers="" use-element="true" filename-element="Title"  />';
+
+      function disqus_config() {
+        this.callbacks.onNewComment = [function(comment) { 
+          resizeDivsAfterComment();
+        }];
+      }
+
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    } else {
+      console.log("In preview") ;
+    }
+
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
+</div>  
+<br class="clear" />

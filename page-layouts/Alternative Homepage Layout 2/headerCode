@@ -1,0 +1,238 @@
+<!doctype html>
+<t4 type="navigation" name="Conditional Statements" id="21" />
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><t4 type="title"/> - TERMINALFOUR University</title>
+    <!-- Home -->
+    <t4 type="navigation" id="1" /> <!-- header assets -->
+
+ <t4 type="navigation" name="Google Analytics" id="61" />
+    <t4 type="meta" id="12" /><!-- description -->
+    <t4 type="meta" id="14" /><!-- keywords -->
+    
+    <t4 type="meta" id="22" /><!-- course code -->
+    <t4 type="meta" id="24" /><!-- course type -->
+    <t4 type="meta" id="20" /><!-- location -->
+    <t4 type="meta" id="23" /><!-- category -->
+    <t4 type="meta" id="21" /><!-- course accreditation -->
+    <t4 type="meta" id="26" /><!-- start date -->
+    <t4 type="meta" id="25" /><!-- end date -->
+    
+    <t4 type="meta" id="19" /><!-- og:title -->
+    <t4 type="meta" id="27" /><!-- og:description -->
+    <t4 type="meta" id="18" /><!-- og:image -->
+    <t4 type="meta" id="31" output_to_index="false" /><!-- og:type -->
+    
+    <t4 type="meta" id="34" output_to_index="false" /><!-- article:author -->
+    <t4 type="meta" id="28" output_to_index="false" /><!-- article:publish_time -->
+    <t4 type="meta" id="29" output_to_index="false" /><!-- article:section -->
+    <t4 type="meta" id="33" output_to_index="false" /><!-- article:tag -->
+    
+    <t4 type="meta" id="32" output_to_index="false" /><!-- profile:first_name -->
+    <t4 type="meta" id="30" output_to_index="false" /><!-- profile:last_name -->
+    <style type="text/css">
+
+    .large-only{display:inline;}
+    .small-only{display:none;}
+ 
+    @media (max-width: 63.8em) {
+    .large-only{display:none;}
+    .small-only{display:inline;}
+     }
+      .home-content > .columns{
+      min-height:860px
+      }
+.inner-wrap{background:#222;}
+.home-content, .home-content h3{color:#222;}
+.home-content .accent-colour{background:#990616;}
+.home-content .accent-colour h3{color:#fff;}
+.home-course-search input[type="text"]{ border:1px solid #fff; }
+.home-course-search input[type="radio"]+label{color:#fff;}
+.home-course-search input[type="submit"]{border:1px solid #fff; margin-top:3%;}
+
+
+.home-course-search ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #222;
+}
+.home-course-search :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #222;
+    opacity:  1;
+}
+.home-course-search ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #222;
+    opacity:  1;
+}
+.home-course-search :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #222;
+}
+
+.home-panel{
+clear:both;
+width:100%;
+
+}
+.home-panel ul, .events-home ul{margin-left:0px;}
+.home-panel ul{margin-bottom:2%;}
+.home-panel li{width:49%;  display:block; float:left; list-style-type:none;
+  background:#fff; margin-bottom:3%;
+  color:#222;
+
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+  -moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+  box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+
+  -webkit-transition: background .2s ease-in;
+  -moz-transition: background .2s ease-in;
+  -ms-transition: background .2s ease-in;
+  -o-transition: background .2s ease-in;
+  transition: background .2s ease-in;
+  }
+.home-panel li:hover{
+background-color: #990616;
+color:#fff;
+}
+.home-panel li a{
+color:#222;
+-webkit-transition: color .2s ease-in;
+-moz-transition: color .2s ease-in;
+-ms-transition: color .2s ease-in;
+-o-transition: color .2s ease-in;
+transition: color .2s ease-in;
+}
+.home-panel li a:hover{color:#fff;}
+
+.home-panel .hp-2-news{padding:2% 5%; display:block;}
+
+.home-panel li:nth-of-type(2n - 1){margin-right:2%;}
+
+/* events */
+
+.events-home ul{margin-top:4%; margin-bottom:6%;  overflow:hidden;}
+.events-home li{width:98%; list-style-type:none; clear:both; display:block;  }
+.events-home p{ width:71%; float:right; background:#fff; margin-bottom:3%; padding:2%;
+  color:#222;
+
+-webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+-moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.26);}
+
+
+.events-home .date-stamp .day{padding:0em .5em 0em .5em; font-size: 1.2em}
+.events-home.snippet img, .events-home.snippet .date-stamp{margin-right:0px;}
+
+
+.events-home .date-stamp{float:right;}
+.events-home li .event-info{width:83%; float:right;
+background:#fff; margin-bottom:3%; padding:3% 0% 1% 4%;
+  color:#222;
+
+-webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+-moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.26);
+
+
+}
+.events-home li .event-info .date-stamp .month{padding-top:0px; line-height: 1}
+.events-home li .event-info a{width:80%; display:block; float:left; }
+.events-home li .event-info a:hover{color:#222;}
+
+/* ./events */
+
+.main-col{padding-top:1.5%; background:#efefef;}
+
+.quicklinks ul{margin-left:0px;}
+.quicklinks li a{text-align:right; color:#fff; padding:1em 0.5em 1em 0em; margin:0;  display: block;  
+  transition:     -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+  }
+.quicklinks li a:hover{background:#7a0512; }
+.quicklinks li{border-bottom:1px solid #fff; margin:0 0 0 0; list-style-type: none}
+
+/* campus notices */
+.campus-notices{margin:4% 0 0 0; }
+.campus-notices li{ margin-bottom:1.3%; list-style-type: none; padding:1%; color:#fff; overflow:hidden;  transition:     -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in; }
+.campus-notices li:hover{background:#7a0512;}
+
+.campus-notices li a{color:#fff; display:block; }
+.campus-notices li span{font-size:1.7em; display:block; float:left;margin-right:4%; padding-bottom:3%;}
+
+       
+</style>
+  </head>
+
+<body class="home">
+
+  
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    
+        <t4 type="navigation" name="Header Code" id="3" /> <!-- header code -->
+
+  <div class="contain-to-grid sticky">
+  
+    <nav class="primary-nav top-bar" data-topbar data-options="sticky_on: large">
+      
+      <ul class="title-area">
+        <li class="name"><a href="<t4 type="navigation" name="Link to home" id="2" />"><span class="wai hidden">Home</span></a></li><!-- need to leave this in but empty for menu to function correctly -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      
+      <div class="top-bar-section">
+        <div class="row collapse">
+        <ul class="left large-8 columns">
+          
+          <t4 type="navigation" name="Navigation - Visible links at level 2" id="6" /> <!-- visible links at level 2 -->
+          <t4 type="navigation" name="Navigation - Links for small screens" id="7" /> <!-- Small screen only main navigation -->
+          
+        </ul>
+          
+         <t4 type="navigation" name="Search Box Code" id="8" /> <!-- search box code -->
+          
+        </div>
+      </div>
+      
+    </nav>
+  </div><!-- /.sticky --> 
+    
+
+<div class="emergencynotice" aria-live="assertive" data-t4-emergency-notices="<t4 type="media" formatter="path/*" id="10706" />"></div>
+
+    
+<div class="row home-content">
+	<div class="small-12 medium-7 large-7 columns main-col">
+		<h3><strong>TERMINALFOUR</strong> University News</h3>
+		<div class="home-panel">
+
+      <t4 type="navigation" name="Alternate Homepage 2 - Return news list" id="189"/>
+
+    </div> <!-- end home-panel -->
+
+		<h3><strong>TERMINALFOUR</strong> University Events</h3>
+		<div class="snippet events-home">
+			
+      <t4 type="navigation" name="Alternate Homepage 2 - Return events list" id="190"/>
+		</div> <!-- end snippet events-home -->
+	</div> <!-- end left col -->
+	
+  <div class="small-12 medium-5 large-5 columns accent-colour main-col">
+
+		<!-- navigation object : Sample Data - Homepage-2 Include course search -->
+    <t4 type="navigation" name="Course search form - homepage 2" id="193"/>
+    
+    <!-- Home-2 current section quicklinks -->
+    <t4 type="navigation" id="192" />
+    
+    
+		<t4 type="navigation" name="Alternate Homepage 2 - Campus Notices Getter" id="191"/>
+	</div> <!-- end accent colour -->
+</div> <!-- end row--> 
+
+</div> 
+  

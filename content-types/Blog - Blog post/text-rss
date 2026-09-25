@@ -1,0 +1,9 @@
+<!-- bitbucket -->
+<item>
+  <title><t4 type="content" name="Title" output="normal" modifiers="htmlentities"  /></title>
+  <link>https://www.samplesite.terminalfour.com<t4 type="content" name="Title" output="fulltext" modifiers=""  /></link>
+  <guid isPermaLink="true">https://www.samplesite.terminalfour.com<t4 type="content" name="Title" output="fulltext" modifiers=""  /></guid>
+  <pubDate><t4 type="content" name="Blog Date" output="normal" modifiers="" date_format="EEE, dd MMM yyyy HH:mm:ss"  /> GMT</pubDate>
+  <author><t4 type="content" name="Author Name" output="normal" modifiers="striptags,htmlentities" /></author>
+  <description><t4 type="content" name="Abstract" output="normal" modifiers=""  /></description>
+</item>

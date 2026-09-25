@@ -1,0 +1,17 @@
+</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	<script>
+		$('.slick').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 5000,
+		  fade: true,
+  		  cssEase: 'linear'
+		});
+	</script>
+</body>
+</html>

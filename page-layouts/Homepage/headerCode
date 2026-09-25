@@ -1,0 +1,124 @@
+<t4 type="navigation" name="Return PHP to top of document" id="238" />
+<!doctype html>
+<t4 type="navigation" name="Conditional Statements" id="21" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="fb:pages" content="532077856961197" />
+	<title>TERMINALFOUR University</title>
+    <t4 type="meta" id="12" /><!-- description -->
+    <t4 type="meta" id="14" /><!-- keywords -->
+    
+    <t4 type="meta" id="22" /><!-- course code -->
+    <t4 type="meta" id="24" /><!-- course type -->
+    <t4 type="meta" id="20" /><!-- location -->
+    <t4 type="meta" id="23" /><!-- category -->
+    <t4 type="meta" id="21" /><!-- course accreditation -->
+    <t4 type="meta" id="26" /><!-- start date -->
+    <t4 type="meta" id="25" /><!-- end date -->
+    
+    <t4 type="meta" id="27" /><!-- og:description -->
+    <t4 type="meta" id="18" /><!-- og:image -->
+    <t4 type="navigation" name="get Extra OG Tags" id="221" />
+    
+    <t4 type="meta" id="34" output_to_index="false" /><!-- article:author -->
+    <t4 type="meta" id="28" output_to_index="false" /><!-- article:publish_time -->
+    <t4 type="meta" id="29" output_to_index="false" /><!-- article:section -->
+    <t4 type="meta" id="33" output_to_index="false" /><!-- article:tag -->
+    
+    <t4 type="meta" id="32" output_to_index="false" /><!-- profile:first_name -->
+    <t4 type="meta" id="30" output_to_index="false" /><!-- profile:last_name -->
+	<!-- Home -->
+
+	<!-- Navigation - header assets #1 -->
+	<t4 type="navigation" id="1" /> 
+	<!-- / Navigation - header assets #1 -->
+
+	<!-- Navigation - Google Tag Manager - Head Script #61 -->
+	<t4 type="navigation" name="Google Tag Manager - Head Script" id="61" />
+	<!-- / Navigation - Google Tag Manager - Head Script #61 -->
+</head>
+<body class="home">
+
+	<!-- Navigation - Google Tag Manager - Body Script #194 -->
+	<t4 type="navigation" name="Google Tag Manager - Body Script" id="194" />
+	<!-- Navigation - Google Tag Manager - Body Script #194 -->
+
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<!-- Navigation - Header Code #3 -->
+			<t4 type="navigation" name="Header Code" id="3" />
+			<!-- / Navigation - Header Code #3 -->
+
+			<div class="contain-to-grid sticky">
+				<nav class="primary-nav top-bar" data-topbar data-options="sticky_on: large">
+					<ul class="title-area">
+						<li class="name"><a href="<t4 type="navigation" name="Link to home" id="2" />"><span class="wai hidden">Home</span></a></li><!-- need to leave this in but empty for menu to function correctly -->
+						<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+					</ul>
+
+					<div class="top-bar-section">
+						<div class="row collapse">
+							<ul class="left large-8 columns">
+								<!-- Navigation - Visible links at level 2 #6 -->
+								<t4 type="navigation" name="Navigation - Visible links at level 2" id="6" />
+								<!-- / Navigation - Visible links at level 2 #6 -->
+								<!-- Navigation - Links for small screens #7 -->
+								<t4 type="navigation" name="Navigation - Links for small screens" id="7" />
+								<!-- / Navigation - Links for small screens #7 -->
+							</ul>
+							<!-- Navigation - Search Box Code #8 -->
+							<t4 type="navigation" name="Search Box Code" id="8" />
+							<!-- / Navigation - Search Box Code #8 -->
+						</div>
+					</div>
+				</nav>
+			</div><!-- /.sticky --> 
+
+
+			<!-- slideshow -->
+      <div class="emergencynotice" aria-live="assertive" data-t4-emergency-notices="<t4 type="media" formatter="path/*" id="10706" />"></div>
+      <div class="slick-slider">
+        <!-- Navigation - Current Section Slideshow Slides #9 -->
+				<t4 type="navigation" name="Current Section Slideshow Slides" id="9" />
+				<!-- / Navigation - Current Section Slideshow Slides #9 -->
+      </div>
+			<!-- end slideshow -->   
+			<div class="row main-content">
+				<!-- start events box -->
+				<div class="small-12 medium-7 large-7 columns panel homepage-events">
+          <h3>Upcoming Events &nbsp;&nbsp;&nbsp;<small><strong><a href="<t4 type="navigation" name="Path To Events Page" id="223" />" title="View all Events">View all</a></strong></small></h3>
+
+					<!-- Navigation - Homepage Events #18 -->
+          <ul class="no-bullet">
+					<t4 type="navigation" name="Homepage Events" id="18" />
+          </ul>
+					<!-- / Navigation - Homepage Events #18 -->
+				</div><!-- /.medium-7 -->   
+				<!-- end events box -->   
+
+				<div class="small-12 medium-5 large-5 end columns">
+					<!-- Navigation - Course search form - homepage #16 -->
+					<t4 type="navigation" name="Course search form - homepage" id="16" />
+					<!-- / Navigation - Course search form - homepage #16 -->
+					<!-- Navigation - Current section quicklinks #15 -->
+					<t4 type="navigation" name="Current section quicklinks" id="15" />
+					<!-- / Navigation - Current section quicklinks #15 -->
+				</div><!-- /.medium-5 --> 
+			</div><!-- /.row -->
+
+			<!-- news -->
+			<div class="row">
+				<div class="small 12 columns panel homepage-news">
+					<h3>Recent News &nbsp;&nbsp;&nbsp;<small><strong><a href="<t4 type="navigation" name="Path To News Page" id="224" />" title="View all News">View all</a></strong></small></h3>
+
+					<div class="row">
+						<!-- / Navigation - Homepage News #19 -->
+						<t4 type="navigation" name="Homepage News" id="19" />
+						<!-- / Navigation - Homepage News #19 -->
+					</div> <!-- end row -->
+				</div><!-- /.box panel -->
+			</div> <!-- end row -->
+			<!-- ./news -->
+
+			<!-- end of SM header -->

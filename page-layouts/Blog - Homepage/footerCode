@@ -1,0 +1,27 @@
+<!-- start of SM footer -->
+</div>
+
+
+
+<div class="small-12 medium-4 columns">
+  <!--<h4>Navigation</h4>
+<ul class="side-nav">
+<t4 type="navigation" name="Navigation - Visible links at level 3 and below" id="23" />
+</ul>-->
+
+  <t4 type="navigation" name="Sidebar" id="24" />
+
+</div><!-- /.medium-3 -->
+</div>
+
+<t4 type="navigation" name="Main Footer Content" id="11" /> <!-- footer code -->
+
+<a class="exit-off-canvas"></a>
+</div><!-- /.inner-wrap -->
+</div><!-- /.off-canvas-wrap -->
+
+<t4 type="navigation" name="Asset References - Footer" id="12" /> <!-- footer assets -->
+
+
+</body>
+</html>

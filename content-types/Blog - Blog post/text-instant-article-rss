@@ -1,0 +1,28 @@
+<item>
+            <title><![CDATA[<t4 type="content" name="Title" output="normal" modifiers="htmlentities"  />]]></title>  
+            <link>https://www.samplesite.terminalfour.com<t4 type="content" name="Title" output="fulltext" modifiers=""  /></link> 
+            <guid isPermaLink="true">https://www.samplesite.terminalfour.com<t4 type="content" name="Title" output="fulltext" modifiers=""  /></guid> 
+            <pubDate><t4 type="content" name="Blog date" output="normal" modifiers="" date_format="EEE, dd MMM yyyy HH:mm:ss"  /> GMT</pubDate> 
+			<author><t4 type="content" name="Author name" output="normal" modifiers="striptags,htmlentities" /></author>
+			<description><![CDATA[<t4 type="content" name="Abstract" output="normal" modifiers=""  />]]></description>
+			<content:encoded>
+            <![CDATA[
+            <!doctype html>
+            <html lang="en" prefix="op: http://media.facebook.com/op#">
+              <head>
+                <meta charset="utf-8">
+                <link rel="canonical" href="https://www.samplesite.terminalfour.com<t4 type="content" name="Title" output="fulltext" modifiers=""  />">
+                <meta property="op:markup_version" content="v1.0">
+              </head>
+              <body>
+                <article>
+				  <header>
+				    <t4 type="content" name="Feature image" output="normal" formatter="image/figure" />
+                  </header>
+                  <t4 type="content" name="Blog main body" output="normal" modifiers="medialibrary,nav_sections" />
+                </article>
+              </body>
+            </html>
+            ]]>
+          </content:encoded>
+      </item>

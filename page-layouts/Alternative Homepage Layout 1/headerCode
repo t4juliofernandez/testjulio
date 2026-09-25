@@ -1,0 +1,220 @@
+<!doctype html>
+<t4 type="navigation" name="Conditional Statements" id="21" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><t4 type="title"/> - TERMINALFOUR University</title>
+    <t4 type="meta" id="12" /><!-- description -->
+    <t4 type="meta" id="14" /><!-- keywords -->
+    
+    <t4 type="meta" id="22" /><!-- course code -->
+    <t4 type="meta" id="24" /><!-- course type -->
+    <t4 type="meta" id="20" /><!-- location -->
+    <t4 type="meta" id="23" /><!-- category -->
+    <t4 type="meta" id="21" /><!-- course accreditation -->
+    <t4 type="meta" id="26" /><!-- start date -->
+    <t4 type="meta" id="25" /><!-- end date -->
+    
+    <t4 type="meta" id="19" /><!-- og:title -->
+    <t4 type="meta" id="27" /><!-- og:description -->
+    <t4 type="meta" id="18" /><!-- og:image -->
+    <t4 type="meta" id="31" output_to_index="false" /><!-- og:type -->
+    
+    <t4 type="meta" id="34" output_to_index="false" /><!-- article:author -->
+    <t4 type="meta" id="28" output_to_index="false" /><!-- article:publish_time -->
+    <t4 type="meta" id="29" output_to_index="false" /><!-- article:section -->
+    <t4 type="meta" id="33" output_to_index="false" /><!-- article:tag -->
+    
+    <t4 type="meta" id="32" output_to_index="false" /><!-- profile:first_name -->
+    <t4 type="meta" id="30" output_to_index="false" /><!-- profile:last_name -->
+  <!-- Home -->
+
+  <!-- Navigation - header assets #1 -->
+  <t4 type="navigation" id="1" /> 
+  <!-- / Navigation - header assets #1 -->
+
+  <!-- Navigation - Google Tag Manager - Head Script #61 -->
+  <t4 type="navigation" name="Google Tag Manager - Head Script" id="61" />
+  <!-- / Navigation - Google Tag Manager - Head Script #61 -->
+  <style type="text/css">
+
+    .main-content{margin-top:0px; }
+    .main-news{width:50%; float:right; margin-right:2%;}
+    .news-block, .event-block{overflow:visible; float:left; margin-bottom: 3rem;}
+    .sm-news-block,.event-cal{float:right;}
+    .home-content{margin:-10.2% 2% 0% 2%;  width:96%; position: relative;}
+    .home-content img:not(.event-image){max-width:30%;}
+    .tabs-content .content{background:#fff; position:relative; z-index:1; padding:2%; width:98%;overflow: hidden; }
+
+    .sm-news-block li{display:block; list-style-type: none; margin-bottom:5%;  overflow:visible;}
+    .sm-news-block li img{position:static;}
+    .sm-news-block ul{margin:0px; padding:0px;}
+    .sm-news-block li p{float:right; width:68%;} /* padding-top:2%;}*/
+
+    .home-content .tabs dd>a{background:#990616; color:#fff;}
+    .home-content .tabs dd.active>a {background:#fff;color:#222;}
+    .home .event-cal .pcb-mini-cal {width: 100%;}
+
+    .doormats{width:96%; margin-left:2%; margin-bottom:2%; overflow:hidden;}
+    .doormat h3{/*background:#555555; color:#fff;*/ padding:4% 5%; background:#bbbbbb; color:#222; }
+    .doormat p{padding:1.5%;}
+    .doormat{position:relative; padding-bottom:30px;}
+    .call-top-action{position:absolute; bottom:0px; border-bottom:1px solid #990616; display:block; width:90%; padding:4% 0% 4% 4%;}
+    .call-top-action:hover{color:#fff; background: #990616; border-bottom:1px solid #2d2d2d}
+    .call-top-action i{margin-left:2%;}
+
+    .quotes{background:#222; margin-top:4%; margin-bottom:5%; padding:3%; -webkit-border-top-left-radius: 15px;-webkit-border-bottom-right-radius: 15px;-moz-border-radius-topleft: 15px;-moz-border-radius-bottomright: 15px;border-top-left-radius: 15px;border-bottom-right-radius: 15px;}
+    .quotes p {color:#fff; font-size:1.5em; font-family:"Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;  width:94%; margin-left:5%;}
+    .quotes p i{font-size:1.8em;}
+    .quotes i{font-size:1.8em; color:#fff;}
+    .fa-quote-left{float:left; margin-right:2%;}
+    .fa-quote-right{float:right;}
+
+    .home-content #calendar_box{float:right;}
+    .home-content .hasevent{background:#990616; text-align: center; }
+    .home-content .hasevent a, .home-content .hasevent a:hover{background:none;}
+    .home-content table td:hover{transition:background-color 300ms ease-out;}
+
+    .home-content table thead, .home-content table tfoot{background:#fff; text-align:center;}
+
+    .home-content table thead tr th, .home-content table tfoot tr th, .home-content table tbody tr td, .home-content table tr td, .home-content table tfoot tr td{text-align:center;}
+
+    .home-content table thead tr th, .home-content table tfoot tr th, .home-content table tbody tr td, .home-content table tr td, .home-content table tfoot tr td{-moz-box-shadow:    inset 0 0 5px #dedede; -webkit-box-shadow: inset 0 0 5px #dedede; box-shadow: inset 0 0 5px #dedede;}
+    .home-content table td a{margin:auto;}
+    .home-content table td:hover{transition:background-color 300ms ease-out;}
+
+    @media only screen and (min-width: 40.063em) and (max-width: 64em)  { 
+      .main-news{width:50%}
+
+      .home-content .news-block{width:50%}
+
+      .home-content .news-block img{max-width:20%;}
+      .home-content #calendar_box{float:left;}
+
+      .sm-news-block{float:right; width:50%}
+      .sm-news-block li {width:100%; float:left;}
+      .tabs-content{margin-bottom:0%;}
+
+
+      .main-news{width:50%;float:right; margin-right:2%;}
+
+      .news-block {margin-bottom:2%;}
+
+      .snippet{width:33%; float:left;}
+
+
+      .home-content #calendar_box{width:50%; margin:auto; float:none;
+      }
+
+    }
+
+    @media only screen and (max-width: 40em) { 
+    .sm-news-block{margin-top:15px;}
+    .sm-news-block li p {font-size: 0.8em;width: 60%;}
+    .main-news {width: 50%; }
+    .home-content .news-block img {max-height: 200px;}
+    .home-content #calendar_box{float:left;}
+    .home-content img{max-width:37%;}
+    } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  </style>
+</head>
+<body class="home">
+
+  <!-- Navigation - Google Tag Manager - Body Script #194 -->
+  <t4 type="navigation" name="Google Tag Manager - Body Script" id="194" />
+  <!-- Navigation - Google Tag Manager - Body Script #194 -->
+
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <!-- Navigation - Header Code #3 -->
+      <t4 type="navigation" name="Header Code" id="3" />
+      <!-- / Navigation - Header Code #3 -->
+
+      <div class="contain-to-grid sticky">
+        <nav class="primary-nav top-bar" data-topbar data-options="sticky_on: large">
+          <ul class="title-area">
+            <li class="name"><a href="<t4 type="navigation" name="Link to home" id="2" />"><span class="wai hidden">Home</span></a></li><!-- need to leave this in but empty for menu to function correctly -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+
+          <div class="top-bar-section">
+            <div class="row collapse">
+              <ul class="left large-8 columns">
+                <!-- Navigation - Visible links at level 2 #6 -->
+                <t4 type="navigation" name="Navigation - Visible links at level 2" id="6" />
+                <!-- / Navigation - Visible links at level 2 #6 -->
+                <!-- Navigation - Links for small screens #7 -->
+                <t4 type="navigation" name="Navigation - Links for small screens" id="7" />
+                <!-- / Navigation - Links for small screens #7 -->
+              </ul>
+              <!-- Navigation - Search Box Code #8 -->
+              <t4 type="navigation" name="Search Box Code" id="8" />
+              <!-- / Navigation - Search Box Code #8 -->
+            </div>
+          </div>
+        </nav>
+      </div><!-- /.sticky --> 
+
+      <div class="emergencynotice" aria-live="assertive" data-t4-emergency-notices="<t4 type="media" formatter="path/*" id="10706" />"></div>
+
+      <div class="row main-content">
+        <!-- Navigation - Alternate Homepage 1 Image Getter #183 -->
+        <t4 type="navigation" name="Alternate Homepage 1 Image Getter" id="183" />
+        <!-- / Navigation - Alternate Homepage 1 Image Getter #183 -->
+
+        <div class="home-content">
+          <dl class="tabs" data-tab>
+            <dt class="wai hidden">Tabs</dt>
+            <dd class="active"><a href="#panel1">News</a></dd>
+            <dd><a href="#panel2">Events</a></dd>
+          </dl>
+          <div class="tabs-content">
+            <div class="content active" id="panel1" >
+              <div class="small-12 medium-12 large-7 news-block">
+                <h3><strong>TERMINAL</strong>FOUR University News</h3>
+                <!-- Navigation - Alternate Homepage 1 - Return first news #186 -->
+                <t4 type="navigation" name="Alternate Homepage 1 - Return first news" id="186" />
+                <!-- / Navigation - Alternate Homepage 1 - Return first news #186 -->
+              </div> <!-- large-7 -->
+
+              <div class="small-12 medium-12 large-5 sm-news-block">
+                <ul>
+                  <!-- Navigation - Alternate Homepage 1 - Return news list #187 -->
+                  <t4 type="navigation" name="Alternate Homepage 1 - Return news list" id="187" />
+                  <!-- / Navigation - Alternate Homepage 1 - Return news list #187 -->
+                </ul>
+              </div>  <!-- large-5 -->
+            </div> <!-- #panel1 -->
+            <div class="content" id="panel2">
+              <h3><strong>TERMINAL</strong>FOUR University Events</h3>
+
+              <div class="small-12 medium-12 large-7 columns panel homepage-events">
+                <!-- Navigation - Alternate Homepage 1 - Return events list #188 -->
+                <ul class="no-bullet">
+                <t4 type="navigation" name="Alternate Homepage 1 - Return events list" id="188" />
+                </ul>
+                <!-- / Navigation - Alternate Homepage 1 - Return events list #188 -->
+              </div> <!-- ./event-block -->
+
+              <div class="small-12 medium-12 large-5 event-cal">
+                <!-- Navigation - Sidebar #24 -->
+                <t4 type="navigation" name="Sidebar" id="24" />
+                <!-- / Navigation - Sidebar #24 -->
+              </div> <!-- ./event-cal -->
+            </div> <!-- #panel2 -->
+          </div>
+        </div> <!-- end home content -->
+
+        <div class="doormats">
+          <!-- Navigation - Alternate Homepage 1 - gateway Getter #184 -->
+          <t4 type="navigation" name="Alternate Homepage 1 - gateway Getter" id="184" />
+          <!-- / Navigation - Alternate Homepage 1 - gateway Getter #184 -->
+        </div> <!-- .doormats -->
+
+        <div class="small-12 medium-12 large-12 columns quotes">
+          <!-- Navigation - Alternate Homepage 1 - Quote Getter #185 -->
+          <t4 type="navigation" name="Alternate Homepage 1 Quote Getter" id="185" />
+          <!-- / Navigation - Alternate Homepage 1 - Quote Getter #185 -->
+        </div> <!-- .quotes -->
+      </div> 
+      <!-- end of SM header -->
